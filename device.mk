@@ -229,6 +229,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayCOMMON \
+    DialerOverlayCOMMON \
     TelephonyOverlayCOMMON
 
 PRODUCT_PACKAGES += \
