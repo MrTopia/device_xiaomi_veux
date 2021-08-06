@@ -163,6 +163,11 @@ PRODUCT_PACKAGES += \
     gps.conf \
     izat.conf
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport.vendor \
+    libhwbinder.vendor
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
