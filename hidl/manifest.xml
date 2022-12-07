@@ -284,5 +284,14 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::ISileadFingerprint/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.dolby.hardware.dms</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <kernel target-level="5"/>
 </manifest>
