@@ -71,6 +71,9 @@ on fs
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
 
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 on late-fs
     wait_for_prop hwservicemanager.ready true
     mount_all --late
