@@ -143,6 +143,11 @@ service vendor.pd_mapper /vendor/bin/pd-mapper
     user system
     group system
 
+# Health
+on boot
+    chmod 0660 /sys/class/qcom-battery/input_suspend
+    chown system system /sys/class/qcom-battery/input_suspend
+
 #Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
     class core
