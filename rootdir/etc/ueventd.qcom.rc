@@ -514,3 +514,6 @@ firmware_directories /vendor/firmware_mnt/image/
 # Elliptic
 /dev/elliptic0                 0644   system       system
 /dev/elliptic1                 0644   system       system
+
+# Charger
+/sys/class/qcom-battery   input_suspend      0660    system  system
