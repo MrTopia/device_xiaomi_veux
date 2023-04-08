@@ -123,6 +123,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service
 
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     vendor.qti.hardware.display.allocator-service
