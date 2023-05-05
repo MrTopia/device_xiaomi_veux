@@ -67,6 +67,12 @@ on init
     chown system system /sys/class/qcom-battery/charging_call_state
     chmod 0660 /sys/class/qcom-battery/charging_call_state
 
+on early-fs
+    start vold
+
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 on fs
     mount_all --early
     chown root system /mnt/vendor/persist
