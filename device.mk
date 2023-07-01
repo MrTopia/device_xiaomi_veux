@@ -458,8 +458,10 @@ PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # Thermal
+ifeq ($(TARGET_USE_QTI_THERMAL_SERVICE),true)
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
+endif
 
 # Update engine
 PRODUCT_PACKAGES += \
