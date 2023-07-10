@@ -31,56 +31,10 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #=============================================================================
 
-function configure_zram_parameters() {
-	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-	MemTotal=${MemTotalStr:16:8}
-
-	# Zram disk - 75% for < 2GB devices .
-	# For >2GB devices, size = 50% of RAM size. Limit the size to 4GB.
-
-	let RamSizeGB="( $MemTotal / 1048576 ) + 1"
-	diskSizeUnit=M
-	if [ $RamSizeGB -le 2 ]; then
-		let zRamSizeMB="( $RamSizeGB * 1024 ) * 3 / 4"
-	else
-		let zRamSizeMB="( $RamSizeGB * 1024 ) / 2"
-	fi
-
-	# use MB avoid 32 bit overflow
-	if [ $zRamSizeMB -gt 4096 ]; then
-		let zRamSizeMB=4096
-	fi
-
-	if [ -f /sys/block/zram0/disksize ]; then
-		if [ -f /sys/block/zram0/use_dedup ]; then
-			echo 1 > /sys/block/zram0/use_dedup
-		fi
-		echo "$zRamSizeMB""$diskSizeUnit" > /sys/block/zram0/disksize
-
-		# ZRAM may use more memory than it saves if SLAB_STORE_USER
-		# debug option is enabled.
-		if [ -e /sys/kernel/slab/zs_handle ]; then
-			echo 0 > /sys/kernel/slab/zs_handle/store_user
-		fi
-		if [ -e /sys/kernel/slab/zspage ]; then
-			echo 0 > /sys/kernel/slab/zspage/store_user
-		fi
-
-		mkswap /dev/block/zram0
-		swapon /dev/block/zram0 -p 32758
-	fi
-}
-
 function configure_memory_parameters() {
 	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
 	MemTotal=${MemTotalStr:16:8}
 	# Set Memory parameters.
-
-	# Set swappiness to 100 for all targets
-	#echo 100 > /proc/sys/vm/swappiness
-
-        # Set swappiness to 180 for all targets
-	echo 180 > /proc/sys/vm/swappiness
 
 	# Disable wsf for all targets beacause we are using efk.
 	# wsf Range : 1..1000 So set to bare minimum value 1.
@@ -89,7 +43,6 @@ function configure_memory_parameters() {
 	if [ $MemTotal -le 8388608 ]; then
 		echo 0 > /proc/sys/vm/watermark_boost_factor
 	fi
-	configure_zram_parameters
 
 	#Spawn 2 kswapd threads which can help in fast reclaiming of pages
 	echo 1 > /proc/sys/vm/kswapd_threads
