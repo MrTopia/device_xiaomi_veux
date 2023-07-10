@@ -398,6 +398,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
+    fstab.zram \
     init.device.rc \
     init.kernel.post_boot-blair.sh \
     init.qcom.rc \
