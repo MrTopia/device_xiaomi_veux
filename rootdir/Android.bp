@@ -58,3 +58,9 @@ sh_binary {
     src: "bin/init.kernel.post_boot-blair.sh",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "fstab.zram",
+    src: "etc/fstab.zram",
+    vendor: true,
+}
