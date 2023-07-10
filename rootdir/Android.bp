@@ -12,6 +12,12 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "fstab.zram",
+    src: "etc/fstab.zram",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.device.rc",
     src: "etc/init.device.rc",
     sub_dir: "init",
