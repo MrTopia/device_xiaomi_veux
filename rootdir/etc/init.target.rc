@@ -29,6 +29,10 @@
 #
 import /vendor/etc/init/hw/init.qti.kernel.rc
 
+on early-init
+    # Start audio adsp rpc daemon at early init stage
+    start vendor.audioadsprpcd_audiopd
+
 on init
     # Scheduler uclamp
     mkdir /dev/cpuctl/foreground
