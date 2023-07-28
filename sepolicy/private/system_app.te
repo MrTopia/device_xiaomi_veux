@@ -1,1 +1,5 @@
 hal_client_domain(system_app, hal_mlipay)
+
+# Read zram files.
+allow system_app sysfs_zram:dir r_dir_perms;
+allow system_app sysfs_zram:file r_file_perms;
