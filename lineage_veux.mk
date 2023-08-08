@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2023-2024 The LineageOS Project
 #
-# SPDX-License-Identifier: Apache-2.0
+# SPDX-License-Identifier: Apache-2.0 
 #
 
 # Inherit from those products. Most specific first.
