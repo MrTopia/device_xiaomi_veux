@@ -4,6 +4,9 @@ persist.sys.brightness.low.gamma=true
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
 
+# Logs
+persist.log.tag.ACDB-LOADER=S
+
 # Radio VoNR Calling
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
