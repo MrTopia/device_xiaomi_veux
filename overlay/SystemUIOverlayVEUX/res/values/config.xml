@@ -77,4 +77,7 @@
     <!-- Doze: does this device support STATE_DOZE_SUSPEND?  -->
     <bool name="doze_suspend_display_state_supported">false</bool>
 
+    <!-- Whether show refresh rate QS tile -->
+    <bool name="config_showRefreshRateQsTile">true</bool>
+
 </resources>
