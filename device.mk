@@ -505,16 +505,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
-# WiFi Display
-PRODUCT_PACKAGES += \
-    android.media.audio.common.types-V2-cpp \
-    libnl \
-    libwfdaac_vendor \
-    vendor.qti.hardware.display.config-V5-ndk
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # WiFi firmware symlink
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
