@@ -22,4 +22,8 @@ echo "Cloning BCR..."
 # BCR
 git clone https://github.com/MrTopia/vendor_bcr vendor/bcr
 
+echo "Cloning MIUI Camera..."
+# MIUI Camera
+git clone https://github.com/Amrito-Projects/vendor_xiaomi_miuicamera-veux.git vendor/xiaomi/miuicamera-veux
+git clone https://github.com/Amrito-Projects/vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera
 echo "Completed, proceeding to lunch"
