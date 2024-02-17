@@ -5,6 +5,9 @@
 # Battery
 /vendor/bin/batterysecret                                                      u:object_r:batterysecret_exec:s0
 
+# Init
+/vendor/bin/init\.veux\.perf\.sh						                                                                       u:object_r:vendor_qti_init_shell_exec:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                               u:object_r:camera_persist_file:s0
 /vendor/lib64/libalCFR\.so                                                     u:object_r:same_process_hal_file:s0
