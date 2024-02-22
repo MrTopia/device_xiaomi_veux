@@ -234,6 +234,11 @@ on post-fs-data
     mkdir /data/vendor/dolby 0770 media media
 
 on property:sys.boot_completed=1
+
+    write /dev/kmsg "Boot completed "
+    # Stop bootanimation
+    stop bootanim
+
     #Enable UFS clock scaling back
     write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 1
     #WDSP FW boot sysfs node used by STHAL
