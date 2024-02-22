@@ -27,3 +27,4 @@ persist.vendor.data.mode=concurrent
 
 # WFD
 persist.debug.wfd.enable=1
+persist.vendor.vonr_setting_support=1
