@@ -8,5 +8,8 @@ ro.af.client_heap_size_kbyte=7168
 # FUSE
 persist.sys.fuse.passthrough.enable=true
 
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
+
 # Logs
 persist.log.tag.OpenGLRenderer=S
