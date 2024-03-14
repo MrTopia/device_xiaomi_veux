@@ -165,6 +165,15 @@ vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 vendor.display.target.version=3
 vendor.display.use_smooth_motion=1
 
+# Dolby Atmos
+ro.vendor.audio.dolby.dax.support=true
+ro.vendor.audio.dolby.eq.half=true
+ro.vendor.audio.dolby.surround.enable=true
+ro.vendor.dolby.dax.version=DAX3_3.6.1.6_r1
+ro.vendor.display.dolbyvision.support=true
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
+
 # DPM
 persist.vendor.dpmhalservice.enable=1
 
