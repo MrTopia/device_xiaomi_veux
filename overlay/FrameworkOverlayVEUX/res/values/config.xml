@@ -203,14 +203,6 @@
         <item>20000</item>
     </integer-array>
 
-    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
-    <integer-array name="config_availableColorModes">
-        <item>0</item>   <!-- COLOR_MODE_NATURAL -->
-        <item>1</item>   <!-- COLOR_MODE_BOOSTED -->
-        <item>256</item> <!-- "Saturated" -->
-        <item>258</item> <!-- "Vivid" -->
-    </integer-array>
-
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
          where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
@@ -251,6 +243,23 @@
     <!-- Flag specifying whether WFC over IMS is available on device -->
     <bool name="config_device_wfc_ims_available">true</bool>
 
+    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item>   <!-- COLOR_MODE_NATURAL   -->
+        <item>1</item>   <!-- COLOR_MODE_BOOSTED   -->
+        <item>3</item>   <!-- COLOR_MODE_AUTOMATIC -->
+        <item>258</item> <!-- vivid -->
+        <item>256</item> <!-- saturated -->
+        <item>257</item> <!-- original -->
+        <item>268</item> <!-- p3 -->
+        <item>267</item> <!-- srgb -->
+    </integer-array>
+
+    <!-- Color mode to use when accessibility transforms are enabled. This color mode must be
+         supported by the device, but not necessarily appear in config_availableColorModes. The
+         regularly selected color mode will be used if this value is negative. -->
+    <integer name="config_accessibilityColorMode">2</integer>
+
     <!-- The following two arrays specify which color space to use for display composition when a
          certain color mode is active.
          Composition color spaces are defined in android.view.Display.COLOR_MODE_xxx, and color
@@ -263,16 +272,16 @@
          If a color mode does not have a corresponding color space specified in this array, the
          currently set composition color space will not be modified.-->
     <integer-array name="config_displayCompositionColorModes">
-        <item>0</item>   <!-- COLOR_MODE_NATURAL -->
-        <item>1</item>   <!-- COLOR_MODE_BOOSTED -->
-        <item>256</item> <!-- "Saturated" -->
-        <item>258</item> <!-- "Vivid" -->
+        <item>0</item> <!-- COLOR_MODE_NATURAL   -->
+        <item>1</item> <!-- COLOR_MODE_BOOSTED   -->
+        <item>2</item> <!-- COLOR_MODE_SATURATED -->
+        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
     </integer-array>
     <integer-array name="config_displayCompositionColorSpaces">
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
-        <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
+        <item>9</item> <!-- COLOR_MODE_DISPLAY_P3 -->
     </integer-array>
 
     <!-- If true, the doze component is not started until after the screen has been
