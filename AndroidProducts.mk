@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_veux.mk
+    $(LOCAL_DIR)/everest_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_veux-user \
-    aosp_veux-userdebug \
-    aosp_veux-eng
+    everest_veux-user \
+    everest_veux-userdebug \
+    everest_veux-eng
