@@ -46,3 +46,6 @@ TARGET_SUPPORTS_BLUR := true
 
 # Gapps
 WITH_GAPPS := true
+
+# EPPE
+TARGET_DISABLE_EPPE := true
