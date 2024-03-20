@@ -54,3 +54,6 @@ TARGET_INCLUDE_MATLOG := false
 # Maintainer
 ALPHA_BUILD_TYPE := Official
 ALPHA_MAINTAINER := MrTopiA
+
+# EPPE
+TARGET_DISABLE_EPPE := true
