@@ -24,6 +24,6 @@ git clone https://github.com/Positron-B/vendor_xiaomi_miuicamera.git vendor/xiao
 
 echo "Cloning Audio Configs..."
 # Audio Configs
-rm -rf hardware/qcom-caf/sm8350/audio/configs/holi && git clone https://github.com/MrTopia/hardware_qcom-caf_sm8350_audio_configs_holi.git hardware/qcom-caf/sm8350/audio/configs/holi
+rm -rf hardware/qcom-caf/sm8350/audio/configs/holi && git clone https://github.com/MrTopia/hardware_qcom-caf_sm8350_audio_configs_holi.git -b moto hardware/qcom-caf/sm8350/audio/configs/holi
 
 echo "Completed, proceeding to lunch"
