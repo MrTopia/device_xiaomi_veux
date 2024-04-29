@@ -113,6 +113,8 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.btstack.enable.twsplus=true 
+persist.vendor.btstack.enable.twsplussho=true
 
 # Camera
 camera.disable_zsl_mode=true
