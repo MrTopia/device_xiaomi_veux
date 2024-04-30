@@ -189,6 +189,9 @@ vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
 vendor.gralloc.secure_preview_only=1
 
+# HWUI
+ro.hwui.render_ahead=20
+
 # Incremental FS
 ro.incremental.enable=true
 
