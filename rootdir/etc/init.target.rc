@@ -54,6 +54,8 @@ on init
     write /dev/cpuctl/background/cpu.rt_runtime_us 950000
     write /dev/cpuctl/top-app/cpu.rt_runtime_us 950000
     write /dev/cpuctl/rt/cpu.rt_runtime_us 950000
+    write /sys/block/sda/queue/iosched/group_idle 0
+    write /sys/block/sda/queue/iosched/slice_idle 0
 
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
