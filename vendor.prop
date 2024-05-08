@@ -226,6 +226,11 @@ ro.boot.product.vendor.sku=holi
 ro.soc.manufacturer=QTI
 ro.soc.model=SM6375
 
+# Spatial Audio
+ro.audio.spatializer_enabled=true
+ro.audio.spatializer_transaural_enabled_default=false
+persist.vendor.audio.spatializer.speaker_enabled=true
+
 # USB
 sys.usb.mtp.batchcancel=1
 vendor.usb.controller=4e00000.dwc3

@@ -121,6 +121,9 @@ vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 
+# Audio FX modules (Spatial Audio) - from cheetah-14-AP1A.240405.002
+vendor/lib/soundfx/libspatialaudio.so|c84a1098a775401344d97d3c7638498d9207ccad
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
