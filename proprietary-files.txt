@@ -1422,3 +1422,7 @@ vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 vendor/bin/cnss-daemon
 vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
+
+# Audio - from cheetah-user 14 UP1A.231105.003 11010452 release-keys
+vendor/lib/soundfx/libspatialaudio.so
+vendor/lib64/soundfx/libspatialaudio.so
