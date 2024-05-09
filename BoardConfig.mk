@@ -120,7 +120,7 @@ TARGET_KERNEL_CONFIG := veux_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6375
 TARGET_KERNEL_NO_GCC := true
 
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/configs/dtbo/dtbo.img
 TARGET_KERNEL_ADDITIONAL_FLAGS += DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
 
 # Partitions
