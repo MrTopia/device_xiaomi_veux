@@ -73,7 +73,7 @@ AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
 AUDIO_SKU_DIR := sku_holi
 
 PRODUCT_COPY_FILES += \
-     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio,$(TARGET_COPY_OUT_VENDOR)/etc/audio/$(AUDIO_SKU_DIR))
+     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio,$(TARGET_COPY_OUT_VENDOR)/etc/audio/$(AUDIO_SKU_DIR))
 
 PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/holi/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/$(AUDIO_SKU_DIR)/audio_effects.xml \
@@ -159,7 +159,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display_id_4630947081618265473.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947081618265473.xml
+    $(LOCAL_PATH)/configs/display/display_id_4630947081618265473.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947081618265473.xml
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -217,7 +217,7 @@ PRODUCT_PACKAGES += \
 
 # Hotword enrollment
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 # IFAA manager
 PRODUCT_PACKAGES += \
@@ -395,7 +395,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -520,7 +520,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd@1.0.vendor
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 
 PRODUCT_PACKAGES += \
