@@ -166,6 +166,7 @@ vendor.display.target.version=3
 vendor.display.use_smooth_motion=1
 
 # Dolby Atmos
+ro.audio.spatializer_enabled=true
 ro.vendor.audio.dolby.dax.support=true
 ro.vendor.audio.dolby.eq.half=true
 ro.vendor.audio.dolby.surround.enable=true
