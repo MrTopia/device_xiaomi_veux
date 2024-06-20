@@ -57,3 +57,6 @@ ALPHA_MAINTAINER := MrTopiA
 
 # Sign builds
 PRODUCT_DEFAULT_DEV_CERTIFICATE := .android-certs/releasekey
+
+# EPPE
+TARGET_DISABLE_EPPE := true
