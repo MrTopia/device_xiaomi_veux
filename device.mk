@@ -119,6 +119,11 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libpng.vendor 
 
+# Consumer IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
+
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
