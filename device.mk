@@ -245,9 +245,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
-# Net
+# Network
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
+    android.system.net.netd@1.1.vendor \
+    libnetutils.vendor
 
 PRODUCT_PACKAGES += \
     libloc_net_iface \
@@ -386,18 +387,29 @@ PRODUCT_PACKAGES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti.vendor
 
 # RIL
 PRODUCT_PACKAGES += \
-    librmnetctl
+    librmnetctl \
+    libsqlite.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libjsoncpp \
+    libjsoncpp.vendor \
+    libsqlite \
+    libsqlite.vendor \
+    libutilscallstack \
+    libutilscallstack.vendor
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -491,6 +503,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/wifi,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+
+
+PRODUCT_PACKAGES += \
+    libpng.vendor
 
 # WiFi Display
 PRODUCT_PACKAGES += \
