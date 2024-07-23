@@ -30,4 +30,8 @@ echo "Cloning Priv Keys..."
 # Keys
 git clone https://github.com/MrTopia/.android-certs
 
+echo "Cloning BCR..."
+# BCR
+git clone https://github.com/MrTopia/vendor_bcr vendor/bcr
+
 echo "Completed, proceeding to lunch"
