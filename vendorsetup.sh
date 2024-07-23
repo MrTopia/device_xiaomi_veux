@@ -30,4 +30,8 @@ echo "Cloning Sign keys..."
 # Keys
 cd vendor/everest/signing/keys/ && rm -rf BUILD && git clone https://github.com/MrTopia/signing_keys && cd ../../../..
 
+echo "Cloning BCR..."
+# BCR
+git clone https://github.com/MrTopia/vendor_bcr vendor/bcr
+
 echo "Completed, proceeding to lunch"
