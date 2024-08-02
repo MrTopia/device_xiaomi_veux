@@ -12,10 +12,6 @@ echo "Cloning Vendor..."
 # Vendor
 git clone https://github.com/MrTopia/vendor_xiaomi_veux -b udc-wip vendor/xiaomi/veux
 
-echo "Cloning hardware related stuff..."
-# Hardware
-rm -rf hardware/xiaomi && git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi
-
 echo "Cloning MIUI Camera..."
 # MIUI Camera
 git clone https://github.com/Positron-B/vendor_xiaomi_miuicamera-veux.git vendor/xiaomi/miuicamera-veux
