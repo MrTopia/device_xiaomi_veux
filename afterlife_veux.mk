@@ -41,3 +41,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Maintainer
 AFTERLIFE_MAINTAINER := MrTopiA
+
+# Signing
+-include vendor/lineage-priv/signing/keys/keys.mk
+
+# GAPPS
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
