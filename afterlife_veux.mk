@@ -35,6 +35,7 @@ BUILD_FINGERPRINT := Redmi/veux_global/veux:13/TKQ1.221114.001/V14.0.5.0.TKCIDXM
 
 # Maintainer
 AFTERLIFE_MAINTAINER := MrTopiA
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-afterlife
 
 # Device config
 TARGET_HAS_UDFPS := false
