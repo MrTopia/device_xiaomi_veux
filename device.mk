@@ -575,3 +575,5 @@ $(call inherit-product, vendor/xiaomi/miuicamera-veux/MiuiCamera-veux.mk)
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
