@@ -545,7 +545,9 @@ PRODUCT_BOOT_JARS += \
 
 # Inherit from proprietary targets
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
-$(call inherit-product, vendor/xiaomi/miuicamera-veux/MiuiCamera-veux.mk)
+
+# Google Camera
+$(call inherit-product, vendor/xiaomi/veux-gcam/Camera-vendor.mk)
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \

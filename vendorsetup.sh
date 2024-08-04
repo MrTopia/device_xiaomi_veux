@@ -16,11 +16,9 @@ echo "Cloning hardware related stuff..."
 # Hardware
 rm -rf hardware/xiaomi && git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi
 
-echo "Cloning MIUI Camera..."
-# MIUI Camera
-git clone https://github.com/Positron-B/vendor_xiaomi_miuicamera-veux.git vendor/xiaomi/miuicamera-veux
-git clone https://github.com/MrTopia/vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera
-cd vendor/xiaomi/veux/proprietary/system/priv-app/MiuiCamera/ && wget https://sourceforge.net/projects/tranquilacloud/files/MiuiCamera.apk && cd ../../../../../../..
+echo "Cloning Gcam stuff..."
+# Gcam
+git clone https://github.com/MrTopia/vendor_xiaomi_veux-gcam vendor/xiaomi/veux-gcam
 
 echo "Cloning Audio Configs..."
 # Audio Configs
