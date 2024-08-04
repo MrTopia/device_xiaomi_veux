@@ -13,3 +13,9 @@ git clone --depth=1 https://github.com/LineageOS/android_hardware_xiaomi hardwar
 echo "Cloning Kernel"
 # Kernel
 git clone https://github.com/PaimonLab/kernel_xiaomi_veux.git kernel/xiaomi/veux
+
+echo "Clonimg ViPER......."
+# ViPER
+git clone https://github.com/Amrito-Projects/Viper4AndroidFX.git packages/apps/ViPER4AndroidFX
+
+echo "Completed, proceeding to lunch"

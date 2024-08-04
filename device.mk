@@ -513,3 +513,6 @@ $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
