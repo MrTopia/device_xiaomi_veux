@@ -30,4 +30,8 @@ echo "Cloning BCR..."
 # BCR
 git clone https://github.com/MrTopia/vendor_bcr vendor/bcr
 
+echo "Clonimg ViPER......."
+# ViPER
+git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
+
 echo "Completed, proceeding to lunch"
