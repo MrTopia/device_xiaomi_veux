@@ -10,7 +10,7 @@ git clone https://redkarmakar@bitbucket.org/mrtopia/vendor_xiaomi_veux-firmware.
 
 echo "Cloning Vendor..."
 # Vendor
-git clone https://github.com/MrTopia/vendor_xiaomi_veux -b parts vendor/xiaomi/veux
+git clone https://github.com/MrTopia/vendor_xiaomi_veux -b udc-wip vendor/xiaomi/veux
 
 echo "Cloning hardware related stuff..."
 # Hardware
