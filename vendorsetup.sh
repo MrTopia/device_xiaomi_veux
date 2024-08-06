@@ -39,4 +39,8 @@ echo "Clonimg ViPER......."
 # ViPER
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
 
+echo "Clonimg GAPPS......."
+# GAPPS
+git clone https://gitlab.com/MindTheGapps/vendor_gapps vendor/gapps
+
 echo "Completed, proceeding to lunch"
