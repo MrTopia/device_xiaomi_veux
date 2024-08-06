@@ -473,10 +473,6 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti
-
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
