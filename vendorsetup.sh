@@ -29,4 +29,8 @@ git clone https://github.com/Amrito-Projects/vendor_xiaomi_miuicamera-veux.git v
 git clone https://github.com/Amrito-Projects/vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera
 
 rm -rf hardware/xiaomi/megvii
+
+echo "Cloning clnag-17"
+rm -rf prebuilts/clang/host/linux-x86/clang-r487747c
+git clone https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c.git -b 14.0  prebuilts/clang/host/linux-x86/clang-r487747c
 echo "Completed, proceeding to lunch"
