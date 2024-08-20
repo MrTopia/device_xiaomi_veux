@@ -49,6 +49,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
+    audio.primary.default \
     audio.primary.holi \
     audio.r_submix.default \
     audio.usb.default \
@@ -101,9 +102,11 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64
+    android.hardware.camera.provider@2.4-service_64 \
+    libutilscallstack.vendor
 
 PRODUCT_PACKAGES += \
+    libpng.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_PACKAGES += \
@@ -392,6 +395,7 @@ PRODUCT_PACKAGES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti.vendor
 
@@ -438,6 +442,10 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
+# SQLite
+PRODUCT_PACKAGES += \
+    libsqlite.vendor
 
 # Telephony
 PRODUCT_PACKAGES += \
