@@ -253,6 +253,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.2.vendor \
     android.hardware.media.omx@1.0-service \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -266,7 +267,16 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libmm-omxcore \
     libstagefright_softomx.vendor \
-    libstagefrighthw
+    libstagefrighthw \
+    libavservices_minijail_vendor \
+    libcodec2_soft_common.vendor \
+    libsfplugin_ccodec_utils.vendor \
+    libcodec2_hidl@1.2.vendor
+
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
+    $(LOCAL_PATH)/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -276,6 +286,9 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
 
 # Network
 PRODUCT_PACKAGES += \

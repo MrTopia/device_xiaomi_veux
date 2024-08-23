@@ -22,8 +22,6 @@ ro.vendor.audio.sdk.ssr=false
 vendor.audio.adm.buffering.ms=2
 vendor.audio.chk.cal.spk=2
 vendor.audio.chk.cal.us=2
-vendor.audio.dolby.ds2.enabled=true
-vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=false
@@ -164,6 +162,13 @@ vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 vendor.display.target.version=3
 vendor.display.use_smooth_motion=1
+
+
+# Dolby Atmos
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
+ro.mediaserver.64b.enable=true
+vendor.media.omx=0
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
