@@ -111,6 +111,15 @@ vendor/lib/libdrc.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
 
+# Audio configs
+vendor/etc/audio/sku_holi/audio_effects.conf
+vendor/etc/audio/sku_holi/audio_platform_info.xml
+vendor/etc/audio/sku_holi/audio_platform_info_intcodec.xml
+vendor/etc/audio/sku_holi/mixer_paths.xml
+vendor/etc/audio/sku_holi/mixer_paths_qrd.xml
+vendor/etc/audio/sku_holi/mixer_paths_qrdsku1.xml
+vendor/etc/audio/sku_holi/mixer_paths_usbc.xml
+
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -1046,9 +1055,6 @@ vendor/etc/media_blair/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/etc/media_codecs_performance_blair.xml
-vendor/etc/media_codecs_vendor_audio.xml
-vendor/etc/media_profiles_blair.xml
 vendor/lib/libmmosal.so
 vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
@@ -1057,6 +1063,22 @@ vendor/lib/libqcodec2_hooks.so
 vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
+
+# Media configs
+vendor/etc/media_codecs.xml
+vendor/etc/media_codecs_blair.xml
+vendor/etc/media_codecs_dolby_audio.xml
+vendor/etc/media_codecs_holi.xml
+vendor/etc/media_codecs_kona.xml
+vendor/etc/media_codecs_performance.xml
+vendor/etc/media_codecs_performance_blair.xml
+vendor/etc/media_codecs_performance_holi.xml
+vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/media_profiles.xml
+vendor/etc/media_profiles_V1_0.xml
+vendor/etc/media_profiles_blair.xml
+vendor/etc/media_profiles_holi.xml
+vendor/etc/media_profiles_vendor.xml
 
 # Mlipay
 vendor/bin/mlipayd@1.1
