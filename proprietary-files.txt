@@ -1088,6 +1088,9 @@ vendor/etc/media_profiles_blair.xml
 vendor/etc/media_profiles_holi.xml
 vendor/etc/media_profiles_vendor.xml
 
+# MiuiCamera
+-system/priv-app/MiuiCamera/MiuiCamera.apk|34b9ebcff5b0ea866596c86824659dafc3074308
+
 # Mlipay
 vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
