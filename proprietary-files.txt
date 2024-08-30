@@ -54,6 +54,14 @@ vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 
+# Adreno v676.56 drivers
+vendor/lib/egl/libVkLayer_ADRENO_qprofiler
+vendor/lib/libdmabufheap.so|a2e9f648502e07ef75d4b3d85945d249d6935f92
+vendor/lib/libllvm-qgl.so
+vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so
+vendor/lib64/libdmabufheap.so|870f52874c161c00ce6bf994dbbfb626dabf7e78
+vendor/lib64/libllvm-qgl.so
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
