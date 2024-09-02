@@ -101,8 +101,8 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Audio
-vendor/lib/hw/audio.primary.holi.so
-vendor/lib/liba2dpoffload.so
+vendor/lib/hw/audio.primary.holi.so:vendor/lib/hw/audio.primary.veux.so
+vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_veux.so
 vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioconfigstore.so
