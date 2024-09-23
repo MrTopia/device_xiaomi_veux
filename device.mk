@@ -131,9 +131,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
+    libdisplayconfig.qti \
     libdisplayconfig.system.qti \
     libqdMetaData.system \
     vendor.display.config@1.15.vendor \
+    vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor
 
