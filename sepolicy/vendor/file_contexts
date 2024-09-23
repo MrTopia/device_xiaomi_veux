@@ -55,7 +55,7 @@
 /vendor/bin/hw/android\.hardware\.nfc-service\.nxp                             u:object_r:hal_nfc_default_exec:s0
 
 # Sensors
-/vendor/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi-multihal         u:object_r:hal_sensors_default_exec:s0
+/vendor/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal             u:object_r:hal_sensors_default_exec:s0
 
 # Thermal
 /data/vendor/thermal(/.*)?                                                     u:object_r:thermal_data_file:s0
