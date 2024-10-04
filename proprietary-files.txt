@@ -101,8 +101,8 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Audio
-vendor/lib/hw/audio.primary.holi.so:vendor/lib/hw/audio.primary.veux.so
-vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_veux.so
+vendor/lib/hw/audio.primary.holi.so:vendor/lib/hw/audio.primary.veux.so;FIX_SONAME
+vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_veux.so;FIX_SONAME
 vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioconfigstore.so
@@ -549,7 +549,7 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Consumer IR
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.holi.so
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.holi.so;FIX_SONAME
 
 # Diag
 system_ext/lib64/libdiag_system.so
@@ -666,10 +666,10 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so|8716f793f12ac3d3a5444ddaa056d6150
 vendor/lib64/vendor.qti.esepowermanager@1.1.so|759973ec41a5a9d0f0c4bc941a4e513704ecfc2c
 
 # Fingerprint (FPC)
-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
 
 # Fingerprint (Goodix)
-vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/hw/libgf_hal.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgoodixhwfingerprint.so
@@ -677,7 +677,7 @@ vendor/lib64/libgoodixhwfingerprint.so
 # Fingerprint (Silead)
 vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
 vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
-vendor/lib64/hw/fingerprint.silead.so:vendor/lib64/hw/fingerprint.silead.default.so
+vendor/lib64/hw/fingerprint.silead.so:vendor/lib64/hw/fingerprint.silead.default.so;FIX_SONAME
 vendor/lib64/libsl_fp_impl.so
 vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so
 
@@ -1046,13 +1046,13 @@ vendor/lib64/libmlipay@1.1.so
 
 # NFC
 vendor/etc/init/init.veux.nfc.rc
-vendor/etc/libnfc-nci.conf:vendor/etc/libnfc-nci-pn557.conf
-vendor/etc/libnfc-nxp.conf:vendor/etc/libnfc-pn557.conf
+vendor/etc/libnfc-nci.conf:vendor/etc/libnfc-nci-pn557.conf;FIX_SONAME
+vendor/etc/libnfc-nxp.conf:vendor/etc/libnfc-pn557.conf;FIX_SONAME
 vendor/lib64/libpn557_fw.so
 
 # NFC - from veux_cn
-vendor/etc/libnfc-nci.conf:vendor/etc/libnfc-nci-sn100.conf|1718bb396eb876128b14cdf47e511461fb620f2b
-vendor/etc/libnfc-qrd-SN100.conf:vendor/etc/libnfc-sn100.conf|31330961a0b825e4f196d5c28f5f048cc91fa86e
+vendor/etc/libnfc-nci.conf:vendor/etc/libnfc-nci-sn100.conf;FIX_SONAME|1718bb396eb876128b14cdf47e511461fb620f2b
+vendor/etc/libnfc-qrd-SN100.conf:vendor/etc/libnfc-sn100.conf;FIX_SONAME|31330961a0b825e4f196d5c28f5f048cc91fa86e
 vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so|2bc1887b71b4557b75e26465f6917525bfd43e4a
 
 # Neural Networks
@@ -1269,7 +1269,7 @@ vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
@@ -1279,7 +1279,7 @@ vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
-vendor/lib64/sensors.elliptic.so
+vendor/lib64/sensors.elliptic.so;FIX_SONAME
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.detect.so
 
