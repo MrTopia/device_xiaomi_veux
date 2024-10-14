@@ -185,9 +185,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 BOOT_SECURITY_PATCH := 2024-09-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
-# SELinux
+# Sepolicy
+include device/custom/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-include device/voltage/sepolicy/libperfmgr/sepolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
