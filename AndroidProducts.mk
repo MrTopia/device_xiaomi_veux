@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_veux.mk
+    $(LOCAL_DIR)/infinity_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_veux-user \
-    aosp_veux-userdebug \
-    aosp_veux-eng
+    infinity_veux-user \
+    infinity_veux-userdebug \
+    infinity_veux-eng
