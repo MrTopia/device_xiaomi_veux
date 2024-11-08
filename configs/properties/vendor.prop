@@ -86,9 +86,6 @@ vendor.audio.use.sw.mpegh.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 vendor.voice.path.for.pcm.voip=true
 
-# Audio hardware
-ro.hardware.audio.primary=veux
-
 # Bluetooth
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.asha.central.enabled=false
