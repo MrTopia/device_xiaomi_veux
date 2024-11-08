@@ -679,7 +679,7 @@ vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;DI
 vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;DISABLE_CHECKELF
 vendor/lib64/hw/libgf_hal.so
 vendor/lib64/libgf_ca.so
-vendor/lib64/libgoodixhwfingerprint.so;DISABLE_CHECKELF
+vendor/lib64/libgoodixhwfingerprint.so
 
 # Fingerprint (Silead)
 vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
