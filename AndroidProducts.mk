@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_veux.mk
+    $(LOCAL_DIR)/pixelstar_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_veux-user \
-    infinity_veux-userdebug \
-    infinity_veux-eng
+    pixelstar_veux-user \
+    pixelstar_veux-userdebug \
+    pixelstar_veux-eng
