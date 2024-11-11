@@ -23,6 +23,9 @@ echo "Cloning BCR..."
 # BCR
 git clone https://github.com/MrTopia/vendor_bcr vendor/bcr
 
+echo cloning AGC camera
+git clone https://gitlab.com/takixamru/vendor_xiaomi_agc-camera.git vendor/xiaomi/AGC-camera 
+
 echo "Cloning MIUI Camera..."
 # MIUI Camera
 git clone https://github.com/Amrito-Projects/vendor_xiaomi_miuicamera-veux.git vendor/xiaomi/miuicamera-veux
