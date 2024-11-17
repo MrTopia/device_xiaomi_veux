@@ -336,9 +336,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi \
     vendor/qcom/opensource/usb/etc
 
-# Speed profile services and wifi-service
-PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
-
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
