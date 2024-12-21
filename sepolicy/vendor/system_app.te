@@ -1,6 +1,3 @@
 # Battery Health
 allow system_app sysfs_battery_supply:dir { search };
 allow system_app sysfs_battery_supply:file { read open getattr };
-
-# Xiaomi Parts
-allow system_app sysfs_thermal:file write;
