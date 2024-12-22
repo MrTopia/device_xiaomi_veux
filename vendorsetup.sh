@@ -1,4 +1,5 @@
 echo "Cloning Audio Configs...."
+
 # Clone own audio config tree
 rm -rf hardware/qcom-caf/sm8350/audio/configs/holi && git clone https://github.com/Amrito-Projects/hardware_qcom-caf_sm8350_audio_configs_holi.git -b 14 hardware/qcom-caf/sm8350/audio/configs/holi --depth=1
 
@@ -26,4 +27,6 @@ echo "Cloning MIUI Camera..."
 # MIUI Camera
 git clone https://github.com/Amrito-Projects/vendor_xiaomi_miuicamera-veux.git vendor/xiaomi/miuicamera-veux
 git clone https://github.com/Amrito-Projects/vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera
+
+rm -rf hardware/xiaomi/megvii
 echo "Completed, proceeding to lunch"

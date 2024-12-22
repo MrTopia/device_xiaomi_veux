@@ -14,7 +14,7 @@ $(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
 # Pixelstar flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR_RECENT := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+#TARGET_FACE_UNLOCK_SUPPORTED := true
 USE_PIXEL_CHARGER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 ADD_CUSTOM_APPS := true
