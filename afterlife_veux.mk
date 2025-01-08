@@ -11,24 +11,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common VoltageOS stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+# Inherit some common Afterlife stuff.
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
-# VoltageOS flags.
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_AOSP_RECOVERY := true
-# Official-ify.
-VOLTAGE_BUILD_TYPE := OFFICIAL
-
-# Bootanimation Resolution.
-TARGET_BOOT_ANIMATION_RES := 2160
-
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_BLUR := true
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := veux
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2201116SG
-PRODUCT_NAME := voltage_veux
+PRODUCT_NAME := afterlife_veux
 PRODUCT_SYSTEM_NAME := veux_global
+
+# Gapps
+AFTERLIFE_GAPPS := true
+
+# Maintainer
+AFTERLIFE_MAINTANER := MrTopia
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
