@@ -191,7 +191,7 @@ BOOT_SECURITY_PATCH := 2024-10-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # Sepolicy
-include device/pixelstar/sepolicy/libperfmgr/sepolicy.mk
+include device/afterlife/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include vendor/xiaomi/miuicamera-veux/SEPolicy-veux.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private

@@ -23,8 +23,10 @@ echo "Cloning BCR..."
 # BCR
 git clone https://github.com/MrTopia/vendor_bcr vendor/bcr
 
-echo cloning AGC camera
-git clone https://gitlab.com/takixamru/vendor_xiaomi_agc-camera.git vendor/xiaomi/AGC-camera 
+echo "Cloning Overlays..."
+# Overlays
+cd packages/apps/Settings/res/drawable/ && rm -rf maintainer_img.jpg && wget https://github.com/MrTopia/device_xiaomi_veux/releases/download/stuffs/maintainer_img.jpg && cd ../../../../..
+cd packages/apps/Settings/res/values/ && rm -rf afterlife_strings.xml && wget https://github.com/MrTopia/device_xiaomi_veux/releases/download/stuffs/afterlife_strings.xml && cd ../../../../..
 
 echo "Cloning MIUI Camera..."
 # MIUI Camera
@@ -36,4 +38,5 @@ rm -rf hardware/xiaomi/megvii
 echo "Cloning clnag-17"
 rm -rf prebuilts/clang/host/linux-x86/clang-r487747c
 git clone https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c.git -b 14.0  prebuilts/clang/host/linux-x86/clang-r487747c
+
 echo "Completed, proceeding to lunch"

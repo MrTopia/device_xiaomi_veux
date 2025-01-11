@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelstar_veux.mk
+    $(LOCAL_DIR)/afterlife_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    pixelstar_veux-user \
-    pixelstar_veux-userdebug \
-    pixelstar_veux-eng
+    afterlife_veux-user \
+    afterlife_veux-userdebug \
+    afterlife_veux-eng

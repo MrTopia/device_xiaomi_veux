@@ -1,12 +1,12 @@
 //
-// Copyright (C) 2023-2024 The LineageOS Project
+// Copyright (C) 2023-2024 The AfterLifeOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
 
 soong_namespace {
     imports: [
-        "hardware/lineage/interfaces/power-libperfmgr",
+        "hardware/afterlife/interfaces/power-libperfmgr",
         "hardware/qcom-caf/bootctrl",
         "hardware/qcom-caf/common/libqti-perfd-client",
         "hardware/xiaomi",
