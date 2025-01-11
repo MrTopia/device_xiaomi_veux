@@ -15,10 +15,6 @@ echo "Cloning Kernel"
 # Kernel
 git clone https://github.com/PaimonLab/kernel_xiaomi_veux.git kernel/xiaomi/veux
 
-echo "Clonimg ViPER......."
-# ViPER
-git clone https://github.com/Amrito-Projects/Viper4AndroidFX.git packages/apps/ViPER4AndroidFX
-
 echo "Cloning BCR..."
 # BCR
 git clone https://github.com/MrTopia/vendor_bcr vendor/bcr
