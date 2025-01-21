@@ -1065,20 +1065,11 @@ vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 
 # Media configs
-vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_blair.xml
 vendor/etc/media_codecs_dolby_audio.xml
-vendor/etc/media_codecs_holi.xml
-vendor/etc/media_codecs_kona.xml
-vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_performance_blair.xml
-vendor/etc/media_codecs_performance_holi.xml
 vendor/etc/media_codecs_vendor_audio.xml
-vendor/etc/media_profiles.xml
-vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_blair.xml
-vendor/etc/media_profiles_holi.xml
-vendor/etc/media_profiles_vendor.xml
 
 # MiuiCamera
 -system/priv-app/MiuiCamera/MiuiCamera.apk|34b9ebcff5b0ea866596c86824659dafc3074308
